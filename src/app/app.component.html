@@ -228,7 +228,10 @@
       <h1>Hello, {{ title }}</h1>
       <p>Congratulations! Your app is running. 🎉</p>
       <lib-nh-phone-input [(phoneNumber)]="myPhoneNumber"></lib-nh-phone-input>
-<p>Phone Number: {{ myPhoneNumber }}</p>
+      <p>Phone Number: {{ myPhoneNumber }}</p>
+      <div class="divider" role="separator" aria-label="Divider"></div>
+      <lib-nh-email-input [formGroup]="formGroup" controlName="email" label="User Email" [required]="true"></lib-nh-email-input>
+      <p>Email: {{ formGroup.get('email')?.value }}</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
   </div>

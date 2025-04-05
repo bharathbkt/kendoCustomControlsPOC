@@ -1,0 +1,10 @@
+<label [for]="controlName">{{ label }}</label>
+<kendo-textbox [formControl]="emailControl" [id]="controlName"></kendo-textbox>
+<div *ngIf="emailControl.invalid && (emailControl.dirty || emailControl.touched)" class="error-message">
+  <div *ngIf="emailControl.errors?.['required']">
+    {{ label }} is required.
+  </div>
+  <div *ngIf="emailControl.errors?.['email']">
+    {{ label }} is invalid.
+  </div>
+</div>
