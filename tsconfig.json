@@ -3,6 +3,9 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "@Nh/NhCompLib": [
+        "./dist/nh/nh-comp-lib"
+      ],
       "NhCompLib": [
         "./dist/nh-comp-lib"
       ]

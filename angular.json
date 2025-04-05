@@ -128,6 +128,39 @@
           }
         }
       }
+    },
+    "@Nh/NhCompLib": {
+      "projectType": "library",
+      "root": "projects/nh/nh-comp-lib",
+      "sourceRoot": "projects/nh/nh-comp-lib/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/nh/nh-comp-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nh/nh-comp-lib/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/nh/nh-comp-lib/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/nh/nh-comp-lib/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
