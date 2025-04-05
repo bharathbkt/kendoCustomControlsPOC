@@ -1,16 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-NhCompLib',
+  selector: 'lib-nh-component-library',
   standalone: true,
   imports: [],
   template: `
     <p>
-      nh-comp-lib works!
+      nh-component-library works!
     </p>
   `,
   styles: ``
 })
-export class NhCompLibComponent {
+export class NhComponentLibraryComponent {
 
 }

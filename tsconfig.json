@@ -6,6 +6,9 @@
       "@Nh/NhCompLib": [
         "./dist/nh/nh-comp-lib"
       ],
+      "@nh/nh-component-library": [
+        "./dist/nh/nh-component-library"
+      ],
       "NhCompLib": [
         "./dist/nh-comp-lib"
       ]
